@@ -1,0 +1,824 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Phenom = Instance.new("ScreenGui")
+local OpenH = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local PenumbraShadow = Instance.new("ImageLabel")
+local UmbraShadow = Instance.new("ImageLabel")
+local AmbientShadow = Instance.new("ImageLabel")
+local MainFrame = Instance.new("Frame")
+local AmbientShadow_2 = Instance.new("ImageLabel")
+local PenumbraShadow_2 = Instance.new("ImageLabel")
+local UmbraShadow_2 = Instance.new("ImageLabel")
+local Voting = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local Line = Instance.new("Frame")
+local shadow = Instance.new("ImageLabel")
+local MainFrame_2 = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local shadow_2 = Instance.new("ImageLabel")
+local Map = Instance.new("ImageLabel")
+local shadow_3 = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local voted = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Map_2 = Instance.new("ImageLabel")
+local shadow_4 = Instance.new("ImageLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local UIGradient_6 = Instance.new("UIGradient")
+local UICorner_3 = Instance.new("UICorner")
+local voted_2 = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_8 = Instance.new("TextLabel")
+local UIGradient_7 = Instance.new("UIGradient")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local Map_3 = Instance.new("ImageLabel")
+local shadow_5 = Instance.new("ImageLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local UIGradient_8 = Instance.new("UIGradient")
+local UICorner_5 = Instance.new("UICorner")
+local voted_3 = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_11 = Instance.new("TextLabel")
+local UIGradient_9 = Instance.new("UIGradient")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local Exit = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_12 = Instance.new("TextLabel")
+
+--Properties:
+
+Phenom.Name = "Phenom"
+Phenom.Parent = game:GetService("CoreGui")
+Phenom.ResetOnSpawn = false
+
+OpenH.Name = "OpenH"
+OpenH.Parent = Phenom
+OpenH.AnchorPoint = Vector2.new(0.5, 0.5)
+OpenH.BackgroundColor3 = Color3.fromRGB(247, 247, 247)
+OpenH.BorderSizePixel = 0
+OpenH.Position = UDim2.new(0.934500635, 0, 0.540501893, 0)
+OpenH.Size = UDim2.new(0.107000001, 0, 0.0790000036, 0)
+OpenH.ZIndex = 2
+OpenH.Font = Enum.Font.GothamMedium
+OpenH.Text = ""
+OpenH.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenH.TextScaled = true
+OpenH.TextSize = 14.000
+OpenH.TextWrapped = true
+
+TextLabel.Parent = OpenH
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel.Size = UDim2.new(1, 0, 0.966950119, 0)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Phenom"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 25.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(60, 138, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(94, 255, 255))}
+UIGradient.Parent = OpenH
+
+PenumbraShadow.Name = "PenumbraShadow"
+PenumbraShadow.Parent = OpenH
+PenumbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow.BackgroundTransparency = 1.000
+PenumbraShadow.BorderSizePixel = 0
+PenumbraShadow.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow.Size = UDim2.new(1, 18, 1, 18)
+PenumbraShadow.ZIndex = 0
+PenumbraShadow.Image = "rbxassetid://1316045217"
+PenumbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow.ImageTransparency = 0.880
+PenumbraShadow.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UmbraShadow.Name = "UmbraShadow"
+UmbraShadow.Parent = OpenH
+UmbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow.BackgroundTransparency = 1.000
+UmbraShadow.BorderSizePixel = 0
+UmbraShadow.Position = UDim2.new(0.5, 0, 0.5, 6)
+UmbraShadow.Size = UDim2.new(1, 10, 1, 10)
+UmbraShadow.ZIndex = 0
+UmbraShadow.Image = "rbxassetid://1316045217"
+UmbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+UmbraShadow.ImageTransparency = 0.860
+UmbraShadow.ScaleType = Enum.ScaleType.Slice
+UmbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+AmbientShadow.Name = "AmbientShadow"
+AmbientShadow.Parent = OpenH
+AmbientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow.BackgroundTransparency = 1.000
+AmbientShadow.BorderSizePixel = 0
+AmbientShadow.Position = UDim2.new(0.5, 0, 0.5, 3)
+AmbientShadow.Size = UDim2.new(1, 5, 1, 5)
+AmbientShadow.ZIndex = 0
+AmbientShadow.Image = "rbxassetid://1316045217"
+AmbientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+AmbientShadow.ImageTransparency = 0.800
+AmbientShadow.ScaleType = Enum.ScaleType.Slice
+AmbientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Phenom
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.5, 0, 1.5, 0)
+MainFrame.Size = UDim2.new(0.656290531, 0, 0.712793708, 0)
+
+AmbientShadow_2.Name = "AmbientShadow"
+AmbientShadow_2.Parent = MainFrame
+AmbientShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+AmbientShadow_2.BackgroundTransparency = 1.000
+AmbientShadow_2.BorderSizePixel = 0
+AmbientShadow_2.Position = UDim2.new(0.5, 0, 0.5, 3)
+AmbientShadow_2.Size = UDim2.new(1.01176476, 0, 1.02040815, 0)
+AmbientShadow_2.Visible = false
+AmbientShadow_2.ZIndex = 0
+AmbientShadow_2.Image = "rbxassetid://1316045217"
+AmbientShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+AmbientShadow_2.ImageTransparency = 0.800
+AmbientShadow_2.ScaleType = Enum.ScaleType.Slice
+AmbientShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+PenumbraShadow_2.Name = "PenumbraShadow"
+PenumbraShadow_2.Parent = MainFrame
+PenumbraShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+PenumbraShadow_2.BackgroundTransparency = 1.000
+PenumbraShadow_2.BorderSizePixel = 0
+PenumbraShadow_2.Position = UDim2.new(0.5, 0, 0.5, 1)
+PenumbraShadow_2.Size = UDim2.new(1.04235291, 0, 1.0734694, 0)
+PenumbraShadow_2.Visible = false
+PenumbraShadow_2.ZIndex = 0
+PenumbraShadow_2.Image = "rbxassetid://1316045217"
+PenumbraShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+PenumbraShadow_2.ImageTransparency = 0.880
+PenumbraShadow_2.ScaleType = Enum.ScaleType.Slice
+PenumbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+UmbraShadow_2.Name = "UmbraShadow"
+UmbraShadow_2.Parent = MainFrame
+UmbraShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+UmbraShadow_2.BackgroundTransparency = 1.000
+UmbraShadow_2.BorderSizePixel = 0
+UmbraShadow_2.Position = UDim2.new(0.5, 0, 0.5, 6)
+UmbraShadow_2.Size = UDim2.new(1.02352941, 0, 1.04081631, 0)
+UmbraShadow_2.Visible = false
+UmbraShadow_2.ZIndex = 0
+UmbraShadow_2.Image = "rbxassetid://1316045217"
+UmbraShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+UmbraShadow_2.ImageTransparency = 0.860
+UmbraShadow_2.ScaleType = Enum.ScaleType.Slice
+UmbraShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+Voting.Name = "Voting"
+Voting.Parent = MainFrame
+Voting.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Voting.BackgroundTransparency = 1.000
+Voting.BorderSizePixel = 0
+Voting.Position = UDim2.new(0.00164610974, 0, -0.0109889973, 0)
+Voting.Size = UDim2.new(0.998353839, 0, 0.20408164, 0)
+Voting.Font = Enum.Font.SourceSansBold
+Voting.Text = "Phenom Scripts"
+Voting.TextColor3 = Color3.fromRGB(255, 255, 255)
+Voting.TextScaled = true
+Voting.TextSize = 14.000
+Voting.TextWrapped = true
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(224, 187, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(94, 255, 255))}
+UIGradient_2.Parent = MainFrame
+
+TextLabel_2.Name = "©"
+TextLabel_2.Parent = MainFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0120000141, 0, 0.904999912, 0)
+TextLabel_2.Size = UDim2.new(0.987999916, 0, 0.0938775539, 0)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "By Barbaric | Ui Hub"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextTransparency = 0.500
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Line.Name = "Line"
+Line.Parent = MainFrame
+Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0.180000007, 0, 0.200000003, 0)
+Line.Size = UDim2.new(0.647058845, 0, 0.00408163248, 0)
+
+shadow.Name = "shadow"
+shadow.Parent = MainFrame
+shadow.Active = true
+shadow.AnchorPoint = Vector2.new(0.5, 0.5)
+shadow.BackgroundTransparency = 1.000
+shadow.BorderSizePixel = 0
+shadow.Position = UDim2.new(0.5, 5, 0.5, 5)
+shadow.Size = UDim2.new(1.01647055, 0, 1.02857149, 0)
+shadow.ZIndex = 0
+shadow.Image = "rbxassetid://1316045217"
+shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+shadow.ImageTransparency = 0.600
+shadow.ScaleType = Enum.ScaleType.Slice
+shadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+MainFrame_2.Name = "MainFrame"
+MainFrame_2.Parent = MainFrame
+MainFrame_2.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame_2.BorderSizePixel = 0
+MainFrame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame_2.Rotation = 3.000
+MainFrame_2.Size = UDim2.new(1, 0, 1, 0)
+MainFrame_2.ZIndex = 0
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(224, 187, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(94, 255, 255))}
+UIGradient_3.Parent = MainFrame_2
+
+shadow_2.Name = "shadow"
+shadow_2.Parent = MainFrame_2
+shadow_2.Active = true
+shadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+shadow_2.BackgroundTransparency = 1.000
+shadow_2.BorderSizePixel = 0
+shadow_2.Position = UDim2.new(0.5, 5, 0.5, 5)
+shadow_2.Size = UDim2.new(1.01647055, 0, 1.02857149, 0)
+shadow_2.ZIndex = 0
+shadow_2.Image = "rbxassetid://1316045217"
+shadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+shadow_2.ImageTransparency = 0.600
+shadow_2.ScaleType = Enum.ScaleType.Slice
+shadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
+
+Map.Name = "Map"
+Map.Parent = MainFrame
+Map.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Map.BorderSizePixel = 0
+Map.Position = UDim2.new(0.0790513828, 0, 0.344322354, 0)
+Map.Size = UDim2.new(0.197628453, 0, 0.366300374, 0)
+Map.ZIndex = 2
+Map.Image = "rbxassetid://11818627057"
+
+shadow_3.Name = "shadow"
+shadow_3.Parent = Map
+shadow_3.Active = true
+shadow_3.AnchorPoint = Vector2.new(0.5, 0.5)
+shadow_3.BackgroundTransparency = 1.000
+shadow_3.BorderSizePixel = 0
+shadow_3.Position = UDim2.new(0.5, 5, 0.5, 5)
+shadow_3.Size = UDim2.new(1.01647055, 0, 1.02857149, 0)
+shadow_3.Image = "rbxassetid://1316045217"
+shadow_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+shadow_3.ImageTransparency = 0.600
+shadow_3.ScaleType = Enum.ScaleType.Slice
+shadow_3.SliceCenter = Rect.new(10, 10, 118, 118)
+
+TextLabel_3.Parent = Map
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.120000005, 0, -0.400000036, 0)
+TextLabel_3.Size = UDim2.new(0.75999999, 0, 0.379999995, 0)
+TextLabel_3.Font = Enum.Font.FredokaOne
+TextLabel_3.Text = "Ui Hub"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextButton.Parent = Map
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(-0.0500000045, 0, 1.05999994, 0)
+TextButton.Size = UDim2.new(1.09000003, 0, 0.280000001, 0)
+TextButton.ZIndex = 2
+TextButton.Font = Enum.Font.FredokaOne
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+TextLabel_4.Parent = TextButton
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_4.ZIndex = 2
+TextLabel_4.Font = Enum.Font.FredokaOne
+TextLabel_4.Text = "Execute"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(99, 133, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(199, 30, 255))}
+UIGradient_4.Parent = TextButton
+
+UICorner.Parent = TextButton
+
+voted.Name = "voted"
+voted.Parent = Map
+voted.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+voted.Position = UDim2.new(0.610000014, 0, -0.0450000018, 0)
+voted.Size = UDim2.new(0, 66, 0, 18)
+voted.ZIndex = 2
+voted.Font = Enum.Font.SourceSansBold
+voted.Text = "100 R$"
+voted.TextColor3 = Color3.fromRGB(255, 255, 255)
+voted.TextSize = 14.000
+
+UICorner_2.Parent = voted
+
+TextLabel_5.Parent = voted
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Size = UDim2.new(0, 66, 0, 18)
+TextLabel_5.ZIndex = 2
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "Top Rated "
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 98, 101)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 135, 137))}
+UIGradient_5.Parent = voted
+
+UIAspectRatioConstraint.Parent = voted
+UIAspectRatioConstraint.AspectRatio = 3.667
+
+Map_2.Name = "Map"
+Map_2.Parent = MainFrame
+Map_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Map_2.BorderSizePixel = 0
+Map_2.Position = UDim2.new(0.401185751, 0, 0.344322354, 0)
+Map_2.Size = UDim2.new(0.197628453, 0, 0.366300374, 0)
+Map_2.ZIndex = 2
+Map_2.Image = "rbxassetid://6403436054"
+
+shadow_4.Name = "shadow"
+shadow_4.Parent = Map_2
+shadow_4.Active = true
+shadow_4.AnchorPoint = Vector2.new(0.5, 0.5)
+shadow_4.BackgroundTransparency = 1.000
+shadow_4.BorderSizePixel = 0
+shadow_4.Position = UDim2.new(0.5, 5, 0.5, 5)
+shadow_4.Size = UDim2.new(1.01647055, 0, 1.02857149, 0)
+shadow_4.Image = "rbxassetid://1316045217"
+shadow_4.ImageColor3 = Color3.fromRGB(0, 0, 0)
+shadow_4.ImageTransparency = 0.600
+shadow_4.ScaleType = Enum.ScaleType.Slice
+shadow_4.SliceCenter = Rect.new(10, 10, 118, 118)
+
+TextLabel_6.Parent = Map_2
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.120000005, 0, -0.400000036, 0)
+TextLabel_6.Size = UDim2.new(0.75999999, 0, 0.379999995, 0)
+TextLabel_6.Font = Enum.Font.FredokaOne
+TextLabel_6.Text = "Speed"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+TextButton_2.Parent = Map_2
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(-0.0500000045, 0, 1.05999994, 0)
+TextButton_2.Size = UDim2.new(1.09000003, 0, 0.280000001, 0)
+TextButton_2.ZIndex = 2
+TextButton_2.Font = Enum.Font.FredokaOne
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+
+TextLabel_7.Parent = TextButton_2
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_7.ZIndex = 2
+TextLabel_7.Font = Enum.Font.FredokaOne
+TextLabel_7.Text = "Execute"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(99, 133, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(199, 30, 255))}
+UIGradient_6.Parent = TextButton_2
+
+UICorner_3.Parent = TextButton_2
+
+voted_2.Name = "voted"
+voted_2.Parent = Map_2
+voted_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+voted_2.Position = UDim2.new(0.610000014, 0, -0.0450000018, 0)
+voted_2.Size = UDim2.new(0, 66, 0, 18)
+voted_2.ZIndex = 2
+voted_2.Font = Enum.Font.SourceSansBold
+voted_2.Text = "100 R$"
+voted_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+voted_2.TextSize = 14.000
+
+UICorner_4.Parent = voted_2
+
+TextLabel_8.Parent = voted_2
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Size = UDim2.new(0, 66, 0, 18)
+TextLabel_8.ZIndex = 2
+TextLabel_8.Font = Enum.Font.SourceSansBold
+TextLabel_8.Text = "Voted: N/A"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 98, 101)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 135, 137))}
+UIGradient_7.Parent = voted_2
+
+UIAspectRatioConstraint_2.Parent = voted_2
+UIAspectRatioConstraint_2.AspectRatio = 3.667
+
+Map_3.Name = "Map"
+Map_3.Parent = MainFrame
+Map_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Map_3.BorderSizePixel = 0
+Map_3.Position = UDim2.new(0.721343875, 0, 0.344322354, 0)
+Map_3.Size = UDim2.new(0.197628453, 0, 0.366300374, 0)
+Map_3.ZIndex = 2
+Map_3.Image = "rbxassetid://11176073563"
+
+shadow_5.Name = "shadow"
+shadow_5.Parent = Map_3
+shadow_5.Active = true
+shadow_5.AnchorPoint = Vector2.new(0.5, 0.5)
+shadow_5.BackgroundTransparency = 1.000
+shadow_5.BorderSizePixel = 0
+shadow_5.Position = UDim2.new(0.5, 5, 0.5, 5)
+shadow_5.Size = UDim2.new(1.01647055, 0, 1.02857149, 0)
+shadow_5.Image = "rbxassetid://1316045217"
+shadow_5.ImageColor3 = Color3.fromRGB(0, 0, 0)
+shadow_5.ImageTransparency = 0.600
+shadow_5.ScaleType = Enum.ScaleType.Slice
+shadow_5.SliceCenter = Rect.new(10, 10, 118, 118)
+
+TextLabel_9.Parent = Map_3
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.120000005, 0, -0.400000036, 0)
+TextLabel_9.Size = UDim2.new(0.75999999, 0, 0.379999995, 0)
+TextLabel_9.Font = Enum.Font.FredokaOne
+TextLabel_9.Text = "Loompic"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+TextButton_3.Parent = Map_3
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(-0.0500000045, 0, 1.05999994, 0)
+TextButton_3.Size = UDim2.new(1.09000003, 0, 0.280000001, 0)
+TextButton_3.ZIndex = 2
+TextButton_3.Font = Enum.Font.FredokaOne
+TextButton_3.Text = ""
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 14.000
+
+TextLabel_10.Parent = TextButton_3
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_10.ZIndex = 2
+TextLabel_10.Font = Enum.Font.FredokaOne
+TextLabel_10.Text = "Execute"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(99, 133, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(199, 30, 255))}
+UIGradient_8.Parent = TextButton_3
+
+UICorner_5.Parent = TextButton_3
+
+voted_3.Name = "voted"
+voted_3.Parent = Map_3
+voted_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+voted_3.Position = UDim2.new(0.610000014, 0, -0.0450000018, 0)
+voted_3.Size = UDim2.new(0, 66, 0, 18)
+voted_3.ZIndex = 2
+voted_3.Font = Enum.Font.SourceSansBold
+voted_3.Text = "100 R$"
+voted_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+voted_3.TextSize = 14.000
+
+UICorner_6.Parent = voted_3
+
+TextLabel_11.Parent = voted_3
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Size = UDim2.new(0, 66, 0, 18)
+TextLabel_11.ZIndex = 2
+TextLabel_11.Font = Enum.Font.SourceSansBold
+TextLabel_11.Text = "Voted: N/A"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 98, 101)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 135, 137))}
+UIGradient_9.Parent = voted_3
+
+UIAspectRatioConstraint_3.Parent = voted_3
+UIAspectRatioConstraint_3.AspectRatio = 3.667
+
+Exit.Name = "Exit"
+Exit.Parent = MainFrame
+Exit.AnchorPoint = Vector2.new(0.5, 0.5)
+Exit.BackgroundColor3 = Color3.fromRGB(255, 65, 68)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.975233495, 0, 0.0354887135, 0)
+Exit.Size = UDim2.new(0.0799999982, 0, 0.127000004, 0)
+Exit.ZIndex = 2
+Exit.Font = Enum.Font.FredokaOne
+Exit.Text = ""
+Exit.TextColor3 = Color3.fromRGB(255, 65, 68)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+
+UICorner_7.Parent = Exit
+
+TextLabel_12.Parent = Exit
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0, 0, 1.68660407e-07, 0)
+TextLabel_12.Size = UDim2.new(1.00000012, 0, 1, 0)
+TextLabel_12.ZIndex = 3
+TextLabel_12.Font = Enum.Font.FredokaOne
+TextLabel_12.Text = "X"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
+-- Scripts:
+
+local function NALJBD_fake_script() -- OpenH.SoundEffect 
+	local script = Instance.new('LocalScript', OpenH)
+
+	function PlaySound( )
+		script.Parent.Click:Play( )
+	end
+	script.Parent.MouseButton1Click:connect(PlaySound)
+end
+coroutine.wrap(NALJBD_fake_script)()
+local function HTSO_fake_script() -- OpenH.LocalScript 
+	local script = Instance.new('LocalScript', OpenH)
+
+	local b = script.Parent
+	
+	b.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainFrame:TweenPosition(UDim2.new(0.5, 0,0.5, 0), "Out", "Elastic", 1)
+	end)
+end
+coroutine.wrap(HTSO_fake_script)()
+local function IIWXWD_fake_script() -- OpenH.ClickEffect 
+	local script = Instance.new('LocalScript', OpenH)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent:TweenSize(UDim2.new(0.093, 0,0.068, 0),"Out","Quart",.5,true) -- di pencet
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent:TweenSize(UDim2.new(0.107, 0,0.079, 0),"Out","Quart",.5,true)
+	end)
+end
+coroutine.wrap(IIWXWD_fake_script)()
+local function KCAJ_fake_script() -- OpenH.RotationEffect 
+	local script = Instance.new('LocalScript', OpenH)
+
+	script.Parent.MouseEnter:Connect(function()
+		for i = 0,-5,-5 do
+			wait()
+			script.Parent.Rotation = i
+		end
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		for i = -5,0,5 do
+			wait()
+			script.Parent.Rotation = i
+		end
+	end)
+end
+coroutine.wrap(KCAJ_fake_script)()
+local function RWLSWM_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))() ---
+	
+		local w = library:CreateWindow("BARBARIC'S HUB")
+	
+		local b = w:CreateFolder("Main")
+	
+		b:Button("Aimbot",function()
+			hookfunction(game:GetService("Players").LocalPlayer.IsInGroup, function()
+				return true
+			end)
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Loompic/Phenom-Aimbot/main/Bot"))()
+		end)
+	
+		-- Ball Mag
+	
+		b:Toggle("Ball Mag",function(bool)
+			getgenv().ballMag = bool
+			local RS = game:GetService("RunService")
+			RS.RenderStepped:Connect(function()
+				if ballMag == true then
+					game.Workspace.Map.Basketball.Handle.CFrame = Game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+				end
+			end)
+		end)
+	
+		-- Long arm
+	
+		b:Toggle("Long Arm",function(bool)
+			getgenv().longArm = bool
+			if longArm == true then
+				game:GetService("Players").LocalPlayer.Character['Left Arm'].Size = Vector3.new(15, 1, 1)
+				game:GetService("Players").LocalPlayer.Character['Right Arm'].Size = Vector3.new(15, 1, 1)
+			else
+				game:GetService("Players").LocalPlayer.Character['Left Arm'].Size = Vector3.new(1, 2, 1)
+				game:GetService("Players").LocalPlayer.Character['Right Arm'].Size = Vector3.new(1, 2, 1)
+			end
+		end)
+	end)
+end
+coroutine.wrap(RWLSWM_fake_script)()
+local function STYQS_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local s_rs = game:GetService("RunService")
+		local l_plr = game:GetService("Players").LocalPlayer
+	
+	
+	
+		local l_humrp = l_plr.Character and l_plr.Character:FindFirstChild("HumanoidRootPart")
+		local l_hum = l_plr.Character and l_plr.Character:FindFirstChild("Humanoid")
+	
+		local resp_con = l_plr.CharacterAdded:Connect(function(c) 
+			l_humrp = c:WaitForChild("HumanoidRootPart",3)
+			l_hum = c:WaitForChild("Humanoid",3)
+		end)
+	
+		local function dnec(signal) 
+			local s = {}
+			for _, con in ipairs(getconnections(signal)) do 
+				local func = con.Function
+				if (func and islclosure(func)) then
+					if (not is_synapse_function(func)) then 
+						s[#s+1] = con
+						con:Disable() 
+					end
+				end
+			end
+			return s
+		end
+	
+	
+		local speed_amnt = 5
+	
+		local ui = loadstring(game:HttpGet('https://raw.githubusercontent.com/topitbopit/rblx/main/ui-stuff/jeff_2.lua'))()
+		ui:SetColors('streamline')
+	
+	
+	
+		local w = ui:NewWindow('Universal Speed',250,200)
+	
+		local m = w:NewMenu('Speed')
+		local t = m:NewToggle('Toggle Speed')
+		local s = m:NewSlider('Slider',1,50,5)
+	
+		t:SetTooltip("Enable the Speed")
+		s:SetTooltip("Walkspeed Amount")
+	
+		m:NewLabel()
+		m:NewLabel('by Barbaric Scripts')
+	
+		s.OnValueChanged:Connect(function(v) 
+			speed_amnt = v
+		end)
+	
+		do
+			local a,b
+			t.OnToggle:Connect(function(t)
+				if (t) then
+					a = dnec(l_humrp.Changed)
+					b = dnec(l_humrp:GetPropertyChangedSignal("CFrame"))
+	
+					s_rs:BindToRenderStep("speed",2000,function(dt)
+						l_humrp.CFrame += l_hum.MoveDirection*dt*5*speed_amnt
+					end)
+				else
+					s_rs:UnbindFromRenderStep("speed")
+	
+					for i,v in ipairs(a) do 
+						v:Enable()
+					end
+					for i,v in ipairs(b) do 
+						v:Enable()
+					end
+				end
+			end)
+		end
+	
+		ui.Exiting:Connect(function() 
+			for i,v in ipairs(ui:GetAllToggles()) do 
+				if (v:IsEnabled()) then
+					v:Disable()
+				end
+			end
+			resp_con:Disconnect()
+		end)
+	
+		ui:Ready()
+	end)
+end
+coroutine.wrap(STYQS_fake_script)()
+local function TPBXTGT_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		hookfunction(game:GetService("Players").LocalPlayer.IsInGroup, function()
+			return true
+		end)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Loompic/Phenom-Aimbot/main/Bot"))()
+	end)
+end
+coroutine.wrap(TPBXTGT_fake_script)()
+local function CADBO_fake_script() -- Exit.LocalScript 
+	local script = Instance.new('LocalScript', Exit)
+
+	local b = script.Parent
+	
+	-- exit
+	
+	b.MouseButton1Click:Connect(function()
+		script.Parent.Parent:TweenPosition(UDim2.new(0.5, 0,1.5, 0), "Out", "Elastic", 1)
+	end)
+end
+coroutine.wrap(CADBO_fake_script)()
+local function TQCH_fake_script() -- Exit.ClickEffect 
+	local script = Instance.new('LocalScript', Exit)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent:TweenSize(UDim2.new(0.073, 0,0.112, 0),"Out","Quad",.1,true)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent:TweenSize(UDim2.new(0.08, 0,0.127, 0),"Out","Quad",.1,true)
+	end)
+end
+coroutine.wrap(TQCH_fake_script)()
